@@ -120,7 +120,7 @@ def main():
                 available_files.append(name)
     available_files.sort()
 
-    standard_groups = ["CCSK", "ZeroTrust"]
+    standard_groups = ["CCSK", "CCZT", "Cloud Security"]
     all_groups = sorted(standard_groups + [index_utils.PUBLIC_USERS_GROUP])
 
     st.sidebar.markdown("#### Standard User Groups")
@@ -129,9 +129,9 @@ def main():
     # --- FIX APPLIED HERE: Corrected the filename key ---
     predefined_permissions = {
         "CCSK Study Guide20250225.pdf": ["CCSK"],  # Note: Space removed
-        "Zero_Trust_Implementation_Study_Guide.pdf": ["ZeroTrust"],
-        "Zero_Trust_Planning_Study_Guide.pdf": ["ZeroTrust"],
-        "Zero_Trust_Strategy_Study_Guide.pdf": ["ZeroTrust"]
+        "Zero_Trust_Implementation_Study_Guide.pdf": ["CCZT"],
+        "Zero_Trust_Planning_Study_Guide.pdf": ["CCZT"],
+        "Zero_Trust_Strategy_Study_Guide.pdf": ["Cloud Security"]
     }
 
     if 'file_permissions' not in st.session_state:
