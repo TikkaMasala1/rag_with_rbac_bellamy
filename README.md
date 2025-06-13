@@ -29,24 +29,10 @@ This project is configured to run inside a VS Code Dev Container, which provides
     - A pop-up will appear in the bottom-right corner asking to "Reopen in Container". Click it.
     - VS Code will now build the container. This may take a few minutes on the first run.
 
-3.  **Configure Secrets**:
-    - In the root of the project, create a new file named `.env`.
-    - Copy the contents of `.env.example` (or the block below) into your new `.env` file and add your secret keys. This file is included in `.gitignore` and will not be committed to your repository.
-    ```env
-    # .env file
-
-    # Get from [https://aistudio.google.com/app/apikey](https://aistudio.google.com/app/apikey)
-    GOOGLE_API_KEY="YOUR_GOOGLE_AI_API_KEY"
-
-    # Get from [https://app.pinecone.io/](https://app.pinecone.io/)
-    PINECONE_API_KEY="YOUR_PINECONE_API_KEY"
-    PINECONE_INDEX_NAME="your-pinecone-index-name"
-    ```
-
-4.  **Add Your Documents**:
+3. **Add Your Documents**:
     - Place all your PDF files into the `documents` folder. The application is pre-configured to look for specific filenames for the "CCSK" and "ZeroTrust" groups.
 
-5.  **Run the Application**:
+4. **Run the Application**:
     - Once the dev container is running, open a new terminal in VS Code (`Terminal > New Terminal`).
     - Run the following command to start the Streamlit application:
     ```bash
